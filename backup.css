@@ -1,0 +1,469 @@
+/* Type de la pagina */
+body {
+    font-family: 'Yeseva One', cursive;
+}
+
+
+/* type desde folder */
+
+@font-face {
+    font-family: 'Durer';
+    src: url(../font/Durer.ttf);
+}
+
+/* fin Type de la pagina */
+
+
+/* nav style*/
+
+h1 {
+
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #660000;
+    height: 200px;
+    font-size: 100pt;
+    border-bottom: #660000 solid;
+
+}
+
+nav .navbar {
+
+    margin-top: 20px;
+
+
+}
+
+
+
+nav div {
+    background-color: white;
+}
+
+
+
+
+.nav-link {
+
+    color: black;
+    font-size: 20pt;
+}
+
+/* sacar las vinietas y numero con este llamado*/
+ul li {
+    list-style: none;
+    color: black;
+}
+
+
+section header h1 {
+    background-color: white;
+}
+
+/*Marque personalizacion*/
+
+marquee {
+
+    font-size: 80pt;
+    border: 2px #660000 solid;
+
+}
+
+/*responsive h1 index y marquee */
+
+
+@media screen and (max-width: 810px) {
+
+    h1 {
+
+        font-size: 40pt;
+    }
+
+    marquee {
+
+        font-size: 40pt;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* footer redes*/
+
+
+footer img {
+    width: 30px;
+}
+
+footer div .col {
+
+    padding: 20px;
+}
+
+footer {
+
+    margin: 0px;
+    height: 200px;
+    background: rgb(250, 247, 247);
+    background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
+}
+
+footer p {
+
+
+    font-family: 'Mukta Malar', sans-serif;
+    color: white;
+    padding-top: 70px;
+
+}
+
+
+/*Mobile responsive footer*/
+
+@media screen and (max-width: 560px) {
+
+    footer p {
+
+        font-size: 8pt;
+    }
+
+
+}
+
+
+
+/*index*/
+
+
+.picturecoverindex {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Info*/
+
+
+.about-section {
+    padding: 50px;
+    margin: 10px;
+    text-align: justify;
+    background-color: #cccccc69;
+    border-radius: 5%;
+    color: #660000;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+
+
+.infotext {
+
+    font-family: 'Mukta Malar', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+
+.infotext .mainline {
+
+    font-family: 'Durer', sans-serif;
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+
+
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+.containerfoto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section img {
+    width: 400px;
+    box-sizing: border-box;
+    border: 5px #660000 solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+
+
+
+}
+
+
+/*mobile responsive info*/
+
+@media screen and (max-width: 560px) {
+
+    #infotext {
+
+        font-size: 10pt;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+
+    .about-section {
+
+        font-size: 8pt;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+/*Proyectos*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px 4px 8px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.column img:hover {
+    filter: grayscale(0);
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column img {
+        filter: grayscale(0) brightness(1);
+    }
+}
+
+
+
+/*Tienda*/
+
+#tiendawrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+#tiendawrap2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+
+ul.storesubcontent {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 35px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+li.storesubcontent a {
+
+
+    text-decoration: none;
+    color: black;
+    margin: 12px;
+    font-size: 25pt;
+
+
+
+}
+
+.card {
+
+    border: 2px #660000 solid;
+}
+
+.btn {
+
+    background-color: #660000;
+}
+
+
+/*Tienda imagenes compra*/
+
+.tienda-section {
+    padding: 50px;
+    text-align: center;
+    background: rgb(250, 247, 247);
+    background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
+    color: #660000;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.tiendatext p {
+
+    font-family: 'Mukta Malar', sans-serif;
+    padding: 10px;
+    font-size: 20pt;
+
+
+}
+
+.containerfototienda {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+
+}
+
+
+
+.containerfototienda img {
+
+    width: 400px
+}
+
+
+@media screen and (max-width: 810px) {
+
+    .tienda-section {
+
+        font-size: 8pt;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+}
+
+
+/*Contacto personalizacion*/
+
+
+
+section.bloquecontact {
+
+    background: rgb(250, 247, 247);
+    background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
+    padding: 20px;
+
+}
+
+.enviarbt {
+
+    margin-bottom: 50px;
+}
+
+section h2 {
+
+    padding-top: 40px;
+    color: #660000;
+
+}
+
+p.text-center {
+
+    color: #660000;
+    font-size: 20px;
+    font-family: 'Durer', sans-serif;
+}
+
+#contact-form {
+    color: white;
+}
+
+.dataform {
+    color: white;
+}
