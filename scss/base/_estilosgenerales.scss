@@ -3,3 +3,16 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* Type de la pagina */
+body {
+    font-family: 'Yeseva One', cursive;
+}
+
+
+/* type desde folder */
+
+@font-face {
+    font-family: 'Durer';
+    src: url(../font/Durer.ttf);
+}

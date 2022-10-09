@@ -1,10 +1,17 @@
-/*HELLO*/ 
-
-body {
-    font-family: 'Yeseva One', cursive;
-}
-
+/*imports*/
 
 @import 'components/header';
 
 @import 'base/estilosgenerales';
+
+@import 'components/index';
+
+@import 'components/footer';
+
+@import 'components/info';
+
+@import 'components/proyectos';
+
+
+@import 'components/tienda';
+
