@@ -230,4 +230,28 @@ section .btn {
   background-color: #660000;
 }
 
+section .bloquecontact {
+  background: rgb(250, 247, 247);
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  padding: 20px;
+}
+section .enviarbt {
+  margin-bottom: 50px;
+}
+section h2 {
+  padding-top: 40px;
+  color: #660000;
+}
+section p .text-center {
+  color: #660000;
+  font-size: 20px;
+  font-family: "Durer", sans-serif;
+}
+section ul li #contact-form {
+  color: white;
+}
+section ul li .dataform {
+  color: #660000;
+}
+
 /*# sourceMappingURL=style.css.map */
