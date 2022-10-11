@@ -181,7 +181,7 @@ section .column img {
     filter: grayscale(0) brightness(1);
   }
 }
-section .column:hover {
+section .column img:hover {
   filter: grayscale(0);
 }
 @media screen and (max-width: 800px) {

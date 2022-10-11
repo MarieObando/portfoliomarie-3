@@ -26,11 +26,13 @@ section {
 
                 filter: grayscale(0) brightness(1);
             }
+
+            &:hover {
+                filter: grayscale(0);
+            }
         }
 
-        &:hover {
-            filter: grayscale(0);
-        }
+       
 
 
         @media screen and (max-width: 800px) {
