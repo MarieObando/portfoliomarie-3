@@ -19,29 +19,25 @@ section {
 
     ul {
 
-        li {
-
-            .storesubcontent {
+        .storesubcontent {
 
 
-                a {
+            a {
 
-                    text-decoration: none;
-                    color: black;
-                    margin: 12px;
-                    font-size: 25pt;
-
-
-                }
-
-
+                text-decoration: none;
+                color: black;
+                margin: 12px;
+                font-size: 25pt;
 
 
             }
 
 
 
+
         }
+
+
 
         .storesubcontent {
 
@@ -63,6 +59,7 @@ section {
     .card {
 
         border: 2px #660000 solid;
+        margin-bottom: 20px;
     }
 
     .btn {

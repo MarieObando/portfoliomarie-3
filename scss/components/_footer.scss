@@ -1,27 +1,36 @@
+@import '../base/variable';
+
 footer {
 
     margin: 0px;
-    height: 200px;
+    height: 300px;
     background: rgb(250, 247, 247);
-    background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
+    background: $footer-gradient-color;
 
     div {
 
         img {
-            width: 30px;
+            width: 40px;
         }
 
         .col {
 
-            padding: 20px;
+            padding: 60px;
+
+            @media screen and (max-width: 560px) {
+                padding: 30px;
+
+        }
+
         }
 
         p {
 
 
-            font-family: 'Mukta Malar', sans-serif;
+            font-family: $footer-font-family;
             color: white;
             padding-top: 70px;
+            font-size: 14pt;
 
             @media screen and (max-width: 560px) {
                     font-size: 8pt;

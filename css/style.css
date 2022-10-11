@@ -49,7 +49,7 @@ section .picturecoverindex {
 
 section div marquee {
   font-size: 80pt;
-  border: 2px #660000 solid;
+  border-top: 2px #660000 solid;
 }
 @media screen and (max-width: 810px) {
   section div marquee {
@@ -59,20 +59,26 @@ section div marquee {
 
 footer {
   margin: 0px;
-  height: 200px;
+  height: 300px;
   background: rgb(250, 247, 247);
-  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  background: linear-gradient(180deg, rgb(250, 252, 250) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
 }
 footer div img {
-  width: 30px;
+  width: 40px;
 }
 footer div .col {
-  padding: 20px;
+  padding: 60px;
+}
+@media screen and (max-width: 560px) {
+  footer div .col {
+    padding: 30px;
+  }
 }
 footer div p {
   font-family: "Mukta Malar", sans-serif;
   color: white;
   padding-top: 70px;
+  font-size: 14pt;
 }
 @media screen and (max-width: 560px) {
   footer div p {
@@ -84,11 +90,11 @@ footer div p {
   padding: 50px;
   margin: 10px;
   text-align: justify;
-  background-color: rgba(204, 204, 204, 0.4117647059);
   border-radius: 5%;
   color: #660000;
   display: grid;
   grid-template-columns: 3fr 2fr;
+  background-color: rgba(204, 204, 204, 0.2117647059);
 }
 .about-section .infotext {
   font-family: "Mukta Malar", sans-serif;
@@ -102,8 +108,13 @@ footer div p {
   font-size: 30px;
 }
 @media screen and (max-width: 560px) {
+  .about-section .infotext .mainline {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 560px) {
   .about-section .infotext {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 }
 @keyframes float {
@@ -208,7 +219,7 @@ section #tiendawrap2 {
   flex-wrap: wrap;
   padding: 0 4px;
 }
-section ul li .storesubcontent a {
+section ul .storesubcontent a {
   text-decoration: none;
   color: black;
   margin: 12px;
@@ -225,6 +236,7 @@ section ul .storesubcontent {
 }
 section .card {
   border: 2px #660000 solid;
+  margin-bottom: 20px;
 }
 section .btn {
   background-color: #660000;
@@ -252,6 +264,50 @@ section ul li #contact-form {
 }
 section ul li .dataform {
   color: #660000;
+}
+
+section div #tiendawrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+section div #tiendawrap2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: rgb(250, 247, 247);
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.tienda-section .tiendatext p {
+  font-family: "Mukta Malar", sans-serif;
+  padding: 10px;
+  font-size: 20pt;
+}
+.tienda-section .containerfototienda {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+}
+.tienda-section .containerfototienda img {
+  width: 400px;
+}
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    font-size: 8pt;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

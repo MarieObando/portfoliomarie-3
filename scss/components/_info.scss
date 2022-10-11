@@ -1,12 +1,15 @@
+
+@import '../base/listas';
+
 .about-section {
     padding: 50px;
     margin: 10px;
     text-align: justify;
-    background-color: #cccccc69;
     border-radius: 5%;
     color: #660000;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    background-color: nth($colores,4);
 
 
 
@@ -25,13 +28,19 @@
             padding: 10px;
             font-size: 30px;
 
+            @media screen and (max-width: 560px) {
+
+                font-size: 12pt;
+    
+            }
+
         }
 
         /*mobile responsive info*/
 
         @media screen and (max-width: 560px) {
 
-            font-size: 10pt;
+            font-size: 12pt;
 
         }
 
