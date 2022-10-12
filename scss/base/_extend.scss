@@ -17,3 +17,56 @@
     flex-wrap: wrap;
     padding: 0 4px;
 }
+
+
+
+%suscripcioncuadro {
+
+    .content {
+        max-width: 650px;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    h2 {
+        color: #243c4f;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 560px) {
+
+            font-size: 12pt;
+
+        }
+    }
+
+    .form-control {
+        height: 50px;
+        border-color: #ffffff;
+        border-radius: 0;
+
+        &:focus {
+
+            box-shadow: none;
+            border: 2px solid #660000;
+
+        }
+    }
+
+
+    .btn {
+        min-height: 50px;
+        border-radius: 20;
+        background: #660000;
+        color: #fff;
+        font-weight: 600;
+
+
+    }
+
+
+
+
+}

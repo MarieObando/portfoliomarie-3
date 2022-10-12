@@ -1,4 +1,13 @@
+
+@import '../base/extend';
+
 section {
+
+    .suscripcion {
+
+        @extend %suscripcioncuadro;
+
+    }
 
 
     .row {

@@ -1,5 +1,17 @@
-
 @import '../base/listas';
+@import '../base/extend';
+
+section {
+
+    .suscripcion {
+
+        @extend %suscripcioncuadro;
+
+    }
+
+
+}
+
 
 .about-section {
     padding: 50px;
@@ -9,11 +21,7 @@
     color: #660000;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    background-color: nth($colores,4);
-
-
-
-
+    background-color: nth($colores, 4);
 
 
     .infotext {
@@ -31,7 +39,7 @@
             @media screen and (max-width: 560px) {
 
                 font-size: 12pt;
-    
+
             }
 
         }

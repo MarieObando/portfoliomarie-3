@@ -43,10 +43,58 @@ body {
   font-family: "Durer";
   src: url(../font/Durer.ttf);
 }
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section div .tiendawrapprint, section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
 section .picturecoverindex {
   margin-bottom: 20px;
 }
-
 section div marquee {
   font-size: 80pt;
   border-top: 2px #660000 solid;
@@ -84,6 +132,55 @@ footer div p {
   footer div p {
     font-size: 8pt;
   }
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section div .tiendawrapprint, section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
 }
 
 .about-section {
@@ -157,6 +254,55 @@ footer div p {
   }
 }
 
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section div .tiendawrapprint, section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
 section .row {
   display: flex;
   flex-wrap: wrap;
@@ -224,6 +370,40 @@ section div .tiendawrapprint, section .tiendawrapimagenes {
   padding: 0 4px;
 }
 
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
 section ul .storesubcontent a {
   text-decoration: none;
   color: black;
@@ -245,6 +425,54 @@ section .card {
 }
 section .btn {
   background-color: #660000;
+}
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section div .tiendawrapprint, section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
 }
 
 section .bloquecontact {
@@ -270,7 +498,6 @@ section ul li #contact-form {
 section ul li .dataform {
   color: #660000;
 }
-
 .tienda-section {
   padding: 50px;
   text-align: center;
@@ -286,6 +513,40 @@ section div .tiendawrapprint, section .tiendawrapimagenes {
   padding: 0 4px;
 }
 
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
 .tienda-section {
   padding: 50px;
   text-align: center;
@@ -299,6 +560,40 @@ section .tiendawrapimagenes, section div .tiendawrapprint {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+}
+
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
 }
 
 .tienda-section .tiendatext p {
@@ -341,6 +636,69 @@ section .tiendawrapimagenes, section div .tiendawrapprint {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+}
+
+section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+section .suscripcion h2 {
+  color: #243c4f;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.containerfotoobra {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.obraimage {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+}
+.obraimage img {
+  width: 600px;
+}
+
+.obratext {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+  font-size: 16pt;
+}
+@media screen and (max-width: 810px) {
+  .obratext {
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

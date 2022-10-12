@@ -5,6 +5,9 @@
 section {
 
 
+
+
+
     .tiendawrapimagenes {
 
         @extend %gridtiendageneral;
@@ -61,6 +64,13 @@ section {
     .btn {
 
         background-color: #660000;
+    }
+
+
+    .suscripcion {
+
+        @extend %suscripcioncuadro;
+
     }
 
 

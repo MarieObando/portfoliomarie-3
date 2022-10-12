@@ -1,5 +1,6 @@
-section {
+@import '../base/extend';
 
+section {
 
     .picturecoverindex {
 
@@ -7,12 +8,11 @@ section {
 
     }
 
+    .suscripcion {
 
+        @extend %suscripcioncuadro;
 
-}
-
-
-section {
+    }
 
 
     div {

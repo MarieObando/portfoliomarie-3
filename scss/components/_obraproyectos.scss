@@ -1,0 +1,36 @@
+
+
+
+
+.containerfotoobra {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .obraimage {
+    background-color: white;
+    padding: 10px;
+    flex: 50%;
+
+    img{
+
+        width: 600px;
+    }
+  }
+  
+  .obratext {
+    background-color: white;
+    padding: 10px;
+    flex: 50%;
+    font-size: 16pt;
+
+    @media screen and (max-width: 810px) {
+
+        font-size: 12pt;
+        display: flex;
+        flex-direction: column;
+
+    }
+  }
+  
