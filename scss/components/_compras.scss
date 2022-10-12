@@ -1,13 +1,9 @@
+@import '../base/extend';
+
 .tienda-section {
-    padding: 50px;
-    text-align: center;
-    background: rgb(250, 247, 247);
-    background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
-    color: #660000;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-
-
+    @extend %gridgalerias;
+    
+    
     .tiendatext {
 
         p {
@@ -15,6 +11,13 @@
             font-family: 'Mukta Malar', sans-serif;
             padding: 10px;
             font-size: 20pt;
+
+            @media screen and (max-width: 810px) {
+
+                font-size: 12pt;
+
+
+            }
 
 
         }
@@ -30,8 +33,8 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: flex-end;
+
+
 
     }
 
@@ -55,4 +58,3 @@
 
 
 }
-

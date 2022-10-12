@@ -209,16 +209,21 @@ section .column img:hover {
   }
 }
 
-section #tiendawrap {
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section div .tiendawrapprint, section .tiendawrapimagenes {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
-section #tiendawrap2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+
 section ul .storesubcontent a {
   text-decoration: none;
   color: black;
@@ -266,12 +271,16 @@ section ul li .dataform {
   color: #660000;
 }
 
-section div #tiendawrap {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
 }
-section div #tiendawrap2 {
+
+section div .tiendawrapprint, section .tiendawrapimagenes {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -280,24 +289,33 @@ section div #tiendawrap2 {
 .tienda-section {
   padding: 50px;
   text-align: center;
-  background: rgb(250, 247, 247);
   background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
   color: #660000;
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+
+section .tiendawrapimagenes, section div .tiendawrapprint {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
 .tienda-section .tiendatext p {
   font-family: "Mukta Malar", sans-serif;
   padding: 10px;
   font-size: 20pt;
+}
+@media screen and (max-width: 810px) {
+  .tienda-section .tiendatext p {
+    font-size: 12pt;
+  }
 }
 .tienda-section .containerfototienda {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: flex-end;
 }
 .tienda-section .containerfototienda img {
   width: 400px;
@@ -308,6 +326,21 @@ section div #tiendawrap2 {
     display: flex;
     flex-direction: column;
   }
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes, section div .tiendawrapprint {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

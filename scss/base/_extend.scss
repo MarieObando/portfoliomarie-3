@@ -1,0 +1,19 @@
+%gridgalerias {
+
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
+    color: #660000;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+
+}
+
+
+%gridtiendageneral {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
