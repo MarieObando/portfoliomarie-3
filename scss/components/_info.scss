@@ -95,6 +95,8 @@ section {
 
     }
 
+    
+
 
 
     @media screen and (max-width: 810px) {
@@ -107,4 +109,22 @@ section {
 
 
 
+}
+
+.statement {
+
+    padding: auto;
+
+    h2{
+        margin: 50px;
+        
+    }
+
+    p {
+
+        margin: 50px;
+        text-align: justify;
+
+    }
+    
 }

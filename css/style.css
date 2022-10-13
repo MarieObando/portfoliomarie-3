@@ -65,6 +65,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -156,6 +158,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -254,6 +258,17 @@ section .suscripcion .btn {
   }
 }
 
+.statement {
+  padding: auto;
+}
+.statement h2 {
+  margin: 50px;
+}
+.statement p {
+  margin: 50px;
+  text-align: justify;
+}
+
 .tienda-section {
   padding: 50px;
   text-align: center;
@@ -276,6 +291,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -377,6 +394,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -448,6 +467,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -520,6 +541,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -569,6 +592,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -645,6 +670,8 @@ section .suscripcion .content {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 section .suscripcion h2 {
   color: #243c4f;
@@ -676,6 +703,7 @@ section .suscripcion .btn {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 100px;
 }
 
 .obraimage {
@@ -685,6 +713,7 @@ section .suscripcion .btn {
 }
 .obraimage img {
   width: 600px;
+  box-shadow: 10px 10px 20px 20px rgba(128, 128, 128, 0.493);
 }
 
 .obratext {
@@ -692,6 +721,7 @@ section .suscripcion .btn {
   padding: 10px;
   flex: 50%;
   font-size: 16pt;
+  margin-top: 20px;
 }
 @media screen and (max-width: 810px) {
   .obratext {
