@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    margin-top: 100px;
 }
 
 
@@ -36,7 +37,7 @@
     }
 
     h2 {
-        color: #243c4f;
+        color: #080808;
         margin-bottom: 40px;
 
         @media screen and (max-width: 560px) {
