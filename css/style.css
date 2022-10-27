@@ -1,17 +1,699 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 21 | @import 'components/print';
- *    |         ^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\style.scss 21:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 21 \2502  @import 'components/print';\d\a    \2502          ^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 21:9  root stylesheet";
+/*imports*/
+header h1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  height: 200px;
+  font-size: 40pt;
+  border-bottom: #660000 solid;
+  background-color: white;
 }
+header h1 a {
+  text-decoration: none;
+  color: #660000;
+}
+header h1 a:hover {
+  color: rgb(243, 21, 21);
+}
+@media screen and (max-width: 810px) {
+  header h1 {
+    font-size: 40pt;
+  }
+}
+header .navbar {
+  margin-top: 20px;
+}
+header .navbar div {
+  background-color: white;
+}
+header .navbar div ul li {
+  list-style: none;
+  color: black;
+}
+header .navbar div ul li .nav-link {
+  color: black;
+  font-size: 20pt;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Type de la pagina */
+body {
+  font-family: "Yeseva One", cursive;
+}
+
+/* type desde folder */
+@font-face {
+  font-family: "Durer";
+  src: url(../font/Durer.ttf);
+}
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+.proyectoimgs .suscripcion .content, section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.proyectoimgs .suscripcion h2, section .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  .proyectoimgs .suscripcion h2, section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+.proyectoimgs .suscripcion .form-control, section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+.proyectoimgs .suscripcion .form-control:focus, section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+.proyectoimgs .suscripcion .btn, section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+section .picturecoverindex {
+  margin-bottom: 20px;
+}
+section div marquee {
+  font-size: 80pt;
+  border-top: 2px #660000 solid;
+}
+@media screen and (max-width: 810px) {
+  section div marquee {
+    font-size: 40pt;
+  }
+}
+
+footer {
+  margin: 0px;
+  height: 300px;
+  background: rgb(250, 247, 247);
+  background: linear-gradient(180deg, rgb(250, 252, 250) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+}
+footer div img {
+  width: 40px;
+}
+footer div .col {
+  padding: 60px;
+}
+@media screen and (max-width: 560px) {
+  footer div .col {
+    padding: 30px;
+  }
+}
+footer div p {
+  font-family: "Mukta Malar", sans-serif;
+  color: white;
+  padding-top: 70px;
+  font-size: 14pt;
+}
+@media screen and (max-width: 560px) {
+  footer div p {
+    font-size: 8pt;
+  }
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+.proyectoimgs .suscripcion .content, section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.proyectoimgs .suscripcion h2, section .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  .proyectoimgs .suscripcion h2, section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+.proyectoimgs .suscripcion .form-control, section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+.proyectoimgs .suscripcion .form-control:focus, section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+.proyectoimgs .suscripcion .btn, section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.about-section {
+  padding: 50px;
+  margin: 10px;
+  text-align: justify;
+  border-radius: 5%;
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  background-color: rgba(204, 204, 204, 0.2117647059);
+}
+.about-section .infotext {
+  font-family: "Mukta Malar", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  /*mobile responsive info*/
+}
+.about-section .infotext .mainline {
+  font-family: "Durer", sans-serif;
+  padding: 10px;
+  font-size: 30px;
+}
+@media screen and (max-width: 560px) {
+  .about-section .infotext .mainline {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 560px) {
+  .about-section .infotext {
+    font-size: 12pt;
+  }
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+.about-section .containerfoto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section img {
+  width: 400px;
+  box-sizing: border-box;
+  border: 5px #660000 solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+@media screen and (max-width: 810px) {
+  .about-section {
+    font-size: 8pt;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.statement {
+  padding: auto;
+}
+.statement h2 {
+  margin: 50px;
+}
+.statement p {
+  margin: 50px;
+  text-align: justify;
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+.proyectoimgs .suscripcion .content, section .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.proyectoimgs .suscripcion h2, section .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  .proyectoimgs .suscripcion h2, section .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+.proyectoimgs .suscripcion .form-control, section .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+.proyectoimgs .suscripcion .form-control:focus, section .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+.proyectoimgs .suscripcion .btn, section .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.proyectoimgs {
+  padding-top: 100px;
+}
+.proyectoimgs .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.proyectoimgs .column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px 4px 8px;
+}
+.proyectoimgs .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+@media screen and (max-width: 600px) {
+  .proyectoimgs .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+.proyectoimgs .column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .proyectoimgs .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .proyectoimgs .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .proyectoimgs .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+@media screen and (max-width: 600px) {
+  .proyectoimgs .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .proyectoimgs .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+section ul .storesubcontent a {
+  text-decoration: none;
+  color: black;
+  margin: 12px;
+  font-size: 25pt;
+}
+section ul .storesubcontent {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 35px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+section .card {
+  border: 2px #660000 solid;
+  margin-bottom: 20px;
+}
+section .btn {
+  background-color: #660000;
+}
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+section .bloquecontact {
+  background: rgb(250, 247, 247);
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  padding: 20px;
+}
+section .enviarbt {
+  margin-bottom: 50px;
+}
+section h2 {
+  padding-top: 40px;
+  color: #660000;
+}
+section p .text-center {
+  color: #660000;
+  font-size: 20px;
+  font-family: "Durer", sans-serif;
+}
+section ul li #contact-form {
+  color: white;
+}
+section ul li .dataform {
+  color: #660000;
+}
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tienda-section .tiendatext p {
+  font-family: "Mukta Malar", sans-serif;
+  padding: 10px;
+  font-size: 20pt;
+}
+@media screen and (max-width: 810px) {
+  .tienda-section .tiendatext p {
+    font-size: 12pt;
+  }
+}
+.tienda-section .containerfototienda {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tienda-section .containerfototienda img {
+  width: 400px;
+}
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    font-size: 8pt;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tienda-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+  color: #660000;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+section .tiendawrapimagenes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 100px;
+}
+
+section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  max-width: 650px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  color: #080808;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+    font-size: 12pt;
+  }
+}
+section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #660000;
+}
+section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+  min-height: 50px;
+  border-radius: 20;
+  background: #660000;
+  color: #fff;
+  font-weight: 600;
+}
+
+.containerfotoobra {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.obraimage {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+}
+.obraimage img {
+  width: 600px;
+  box-shadow: 10px 10px 20px 20px rgba(128, 128, 128, 0.493);
+}
+
+.obratext {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+  font-size: 16pt;
+  margin-top: 20px;
+}
+@media screen and (max-width: 810px) {
+  .obratext {
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
