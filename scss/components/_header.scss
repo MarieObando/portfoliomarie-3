@@ -7,7 +7,7 @@ header {
         padding-top: 30px;
         padding-left: 30px;
 
-        height: 200px;
+        height: 300px;
         font-size: $header-text-size;
         border-bottom: #660000 solid;
         background-color: white;
@@ -20,6 +20,10 @@ header {
                 color: rgb(243, 21, 21);
             }
 
+            font-stretch: expanded;
+            font-weight: 900;
+            
+
 
 
         }
@@ -29,7 +33,9 @@ header {
 
         @media screen and (max-width: 810px) {
 
-            font-size: 40pt;
+            font-size: 50pt;
+            text-align: left;
+            
         }
 
     }

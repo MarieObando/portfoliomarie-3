@@ -2,21 +2,24 @@
 header h1 {
   padding-top: 30px;
   padding-left: 30px;
-  height: 200px;
-  font-size: 40pt;
+  height: 300px;
+  font-size: 120pt;
   border-bottom: #660000 solid;
   background-color: white;
 }
 header h1 a {
   text-decoration: none;
   color: #660000;
+  font-stretch: expanded;
+  font-weight: 900;
 }
 header h1 a:hover {
   color: rgb(243, 21, 21);
 }
 @media screen and (max-width: 810px) {
   header h1 {
-    font-size: 40pt;
+    font-size: 50pt;
+    text-align: left;
   }
 }
 header .navbar {
@@ -275,6 +278,8 @@ section .tiendawrapimagenes {
 .statement p {
   margin: 50px;
   text-align: justify;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 20px;
 }
 
 .tienda-section {
