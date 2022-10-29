@@ -4,13 +4,13 @@ header {
 
     h1 {
 
-        padding-top: 30px;
-        padding-left: 30px;
-
+        padding: 20px;
+        margin: 0 auto;
         height: 300px;
         font-size: $header-text-size;
         border-bottom: #660000 solid;
         background-color: white;
+        text-align: center;
 
         a {
 
@@ -22,10 +22,9 @@ header {
 
             font-stretch: expanded;
             font-weight: 900;
+            font-family: 'shrimp', sans-serif;
             
-
-
-
+        
         }
 
         
@@ -33,8 +32,17 @@ header {
 
         @media screen and (max-width: 810px) {
 
-            font-size: 50pt;
+            font-size: 80pt;
             text-align: left;
+          
+            
+        }
+
+        @media screen and (max-width: 415px) {
+
+            font-size: 60pt;
+            text-align: left;
+          
             
         }
 
