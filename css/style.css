@@ -31,10 +31,14 @@ header h1 a:hover {
   }
 }
 header .navbar {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 header .navbar div {
   background-color: white;
+}
+header .navbar div .navbar-brand {
+  font-size: 20pt;
 }
 header .navbar div ul li {
   list-style: none;
@@ -60,6 +64,34 @@ body {
   font-family: "Durer";
   src: url(../font/Durer.ttf);
 }
+.mensajecons {
+  text-align: center;
+}
+.mensajecons a {
+  text-decoration: none;
+  color: black;
+}
+
+.enconstruccion {
+  font-size: 100pt;
+  font-weight: 500;
+  margin-top: 100px;
+  width: 100%;
+  font-family: "Durer";
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (max-width: 810px) {
+  .enconstruccion {
+    font-size: 50pt;
+  }
+}
+@media screen and (max-width: 428px) {
+  .enconstruccion {
+    font-size: 30pt;
+  }
+}
+
 .tienda-section {
   padding: 50px;
   text-align: center;
@@ -85,6 +117,11 @@ section .tiendawrapimagenes {
   z-index: 2;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 560px) {
+  .proyectoimgs .suscripcion .content, section .suscripcion .content {
+    padding: 8px;
+  }
 }
 .proyectoimgs .suscripcion h2, section .suscripcion h2 {
   color: #080808;
@@ -127,14 +164,30 @@ section #fondoindex {
   filter: brightness(1.5);
 }
 section #fondoindex h2 {
-  color: #660000;
+  color: rgba(102, 0, 0, 0.8156862745);
   font-size: 200px;
   font-weight: 800;
   font-family: "shrimp", sans-serif;
 }
 @media screen and (max-width: 810px) {
   section #fondoindex h2 {
-    font-size: 40pt;
+    font-size: 60pt;
+  }
+}
+section #fondoindex .illus {
+  margin-bottom: 500px;
+}
+@media screen and (max-width: 810px) {
+  section #fondoindex .illus {
+    display: none;
+  }
+}
+section #fondoindex .tration {
+  margin-top: 500px;
+}
+@media screen and (max-width: 810px) {
+  section #fondoindex .tration {
+    display: none;
   }
 }
 @media screen and (max-width: 810px) {
@@ -214,6 +267,11 @@ section .tiendawrapimagenes {
   z-index: 2;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 560px) {
+  .proyectoimgs .suscripcion .content, section .suscripcion .content {
+    padding: 8px;
+  }
 }
 .proyectoimgs .suscripcion h2, section .suscripcion h2 {
   color: #080808;
@@ -315,15 +373,28 @@ section .tiendawrapimagenes {
 .statement {
   padding: auto;
   color: #660000;
+  /*mobile responsive info*/
 }
 .statement h2 {
   margin: 50px;
+  font-family: "Durer";
 }
-.statement p {
-  margin: 50px;
+.statement #statementtext {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
   text-align: justify;
   font-family: "Mukta Malar", sans-serif;
   font-size: 20px;
+}
+.statement #statementtext div {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 560px) {
+  .statement {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .tienda-section {
@@ -351,6 +422,11 @@ section .tiendawrapimagenes {
   z-index: 2;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 560px) {
+  .proyectoimgs .suscripcion .content, section .suscripcion .content {
+    padding: 8px;
+  }
 }
 .proyectoimgs .suscripcion h2, section .suscripcion h2 {
   color: #080808;
@@ -459,6 +535,11 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   margin-top: 100px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 560px) {
+  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+    padding: 8px;
+  }
+}
 section .suscripcion h2, .proyectoimgs .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
@@ -489,7 +570,7 @@ section ul .storesubcontent a {
   text-decoration: none;
   color: black;
   margin: 12px;
-  font-size: 25pt;
+  font-size: 20pt;
 }
 section ul .storesubcontent {
   display: flex;
@@ -503,6 +584,8 @@ section ul .storesubcontent {
 section .card {
   border: 2px #660000 solid;
   margin-bottom: 20px;
+  font-family: "Durer";
+  font-weight: bold;
 }
 section .btn {
   background-color: #660000;
@@ -532,6 +615,11 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   z-index: 2;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+    padding: 8px;
+  }
 }
 section .suscripcion h2, .proyectoimgs .suscripcion h2 {
   color: #080808;
@@ -607,6 +695,11 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   z-index: 2;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+    padding: 8px;
+  }
 }
 section .suscripcion h2, .proyectoimgs .suscripcion h2 {
   color: #080808;
@@ -686,6 +779,11 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   z-index: 2;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 560px) {
+  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+    padding: 8px;
+  }
 }
 section .suscripcion h2, .proyectoimgs .suscripcion h2 {
   color: #080808;
