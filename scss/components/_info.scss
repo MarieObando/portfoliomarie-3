@@ -17,7 +17,6 @@ section {
     padding: 50px;
     margin: 10px;
     text-align: justify;
-    border-radius: 5%;
     color: #660000;
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -115,13 +114,30 @@ section {
 .statement {
 
     padding: auto;
-    color: white;
+    color: #660000;
     font: weight 800px;
+    margin: 30px;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 2%;
     
 
     h2 {
         margin: 50px;
         font-family: 'Durer';
+
+    }
+
+    .videoinfo {
+
+
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 15%;
+
+
 
     }
 
@@ -148,8 +164,9 @@ section {
 
         div {
             margin-bottom: 20px;
-            background-color: #660000b0;
+            background-color: rgba(255, 255, 255, 0.856);
             padding: 10px;
+            border-radius: 10%;
             
         }
 

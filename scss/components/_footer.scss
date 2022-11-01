@@ -20,6 +20,7 @@ footer {
             @media screen and (max-width: 560px) {
                 padding: 30px;
 
+
         }
 
         }
@@ -34,11 +35,15 @@ footer {
 
             @media screen and (max-width: 560px) {
                     font-size: 8pt;
+                    padding-top: 30px;
     
             }
 
         }
 
     }
+
+    @media screen and (max-width: 560px) {
+        height: 150px; }
 
 }

@@ -80,7 +80,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-.proyectoimgs .suscripcion .content, section .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -91,29 +91,29 @@ section .tiendawrapimagenes {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  .proyectoimgs .suscripcion .content, section .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-.proyectoimgs .suscripcion h2, section .suscripcion h2 {
+.formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .proyectoimgs .suscripcion h2, section .suscripcion h2 {
+  .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
     font-size: 12pt;
   }
 }
-.proyectoimgs .suscripcion .form-control, section .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-.proyectoimgs .suscripcion .form-control:focus, section .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.proyectoimgs .suscripcion .btn, section .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -121,66 +121,45 @@ section .tiendawrapimagenes {
   font-weight: 600;
 }
 
-section .flex-center {
+img {
+  filter: brightness(1.25);
+  margin: 0 auto;
+}
+
+/*.illus {
+                margin-bottom: 500px;
+
+                @media screen and (max-width: 810px) {
+
+                    display: none;
+                }
+
+            }
+
+            .tration {
+                margin-top: 500px;
+
+                @media screen and (max-width: 810px) {
+
+                    display: none;
+                }
+
+            }*/
+section .fotoindex {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-section #fondoindex {
-  width: 1340px;
-  height: 1000px;
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/a2c41194077739.5e8c608d2a6fd.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(1.5);
-}
-section #fondoindex h2 {
-  color: rgba(102, 0, 0, 0.8156862745);
-  font-size: 200px;
-  font-weight: 800;
-  font-family: "shrimp", sans-serif;
-}
-@media screen and (max-width: 810px) {
-  section #fondoindex h2 {
-    font-size: 60pt;
-  }
-}
-section #fondoindex .illus {
-  margin-bottom: 500px;
-}
-@media screen and (max-width: 810px) {
-  section #fondoindex .illus {
-    display: none;
-  }
-}
-section #fondoindex .tration {
-  margin-top: 500px;
-}
-@media screen and (max-width: 810px) {
-  section #fondoindex .tration {
-    display: none;
-  }
-}
-@media screen and (max-width: 810px) {
-  section #fondoindex {
-    width: 808px;
-    height: 500px;
-  }
-}
-@media screen and (max-width: 415px) {
-  section #fondoindex {
-    width: 410px;
-    height: 600px;
-  }
-}
-section div marquee {
+
+div marquee {
   font-size: 100pt;
   border-top: 2px #660000 solid;
   font-family: "shrimp", sans-serif;
 }
 @media screen and (max-width: 810px) {
-  section div marquee {
+  div marquee {
     font-size: 40pt;
   }
 }
@@ -211,6 +190,12 @@ footer div p {
 @media screen and (max-width: 560px) {
   footer div p {
     font-size: 8pt;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 560px) {
+  footer {
+    height: 150px;
   }
 }
 
@@ -230,7 +215,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-.proyectoimgs .suscripcion .content, section .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -241,29 +226,29 @@ section .tiendawrapimagenes {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  .proyectoimgs .suscripcion .content, section .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-.proyectoimgs .suscripcion h2, section .suscripcion h2 {
+.formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .proyectoimgs .suscripcion h2, section .suscripcion h2 {
+  .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
     font-size: 12pt;
   }
 }
-.proyectoimgs .suscripcion .form-control, section .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-.proyectoimgs .suscripcion .form-control:focus, section .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.proyectoimgs .suscripcion .btn, section .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -275,7 +260,6 @@ section .tiendawrapimagenes {
   padding: 50px;
   margin: 10px;
   text-align: justify;
-  border-radius: 5%;
   color: #660000;
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -344,13 +328,24 @@ section .tiendawrapimagenes {
 
 .statement {
   padding: auto;
-  color: white;
+  color: #660000;
   font: weight 800px;
+  margin: 30px;
+  background-repeat: repeat;
+  background-size: cover;
+  border-radius: 2%;
   /*mobile responsive info*/
 }
 .statement h2 {
   margin: 50px;
   font-family: "Durer";
+}
+.statement .videoinfo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 15%;
 }
 .statement #statementtext {
   width: 100%;
@@ -362,8 +357,9 @@ section .tiendawrapimagenes {
 }
 .statement #statementtext div {
   margin-bottom: 20px;
-  background-color: rgba(102, 0, 0, 0.6901960784);
+  background-color: rgba(255, 255, 255, 0.856);
   padding: 10px;
+  border-radius: 10%;
 }
 @media screen and (max-width: 560px) {
   .statement #statementtext {
@@ -394,7 +390,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-.proyectoimgs .suscripcion .content, section .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -405,29 +401,29 @@ section .tiendawrapimagenes {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  .proyectoimgs .suscripcion .content, section .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-.proyectoimgs .suscripcion h2, section .suscripcion h2 {
+.formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .proyectoimgs .suscripcion h2, section .suscripcion h2 {
+  .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
     font-size: 12pt;
   }
 }
-.proyectoimgs .suscripcion .form-control, section .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-.proyectoimgs .suscripcion .form-control:focus, section .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.proyectoimgs .suscripcion .btn, section .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -506,7 +502,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-section .suscripcion .content, .proyectoimgs .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -517,29 +513,29 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+.formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  .formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
     font-size: 12pt;
   }
 }
-section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -587,7 +583,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-section .suscripcion .content, .proyectoimgs .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -598,29 +594,29 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+.formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  .formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
     font-size: 12pt;
   }
 }
-section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -628,28 +624,30 @@ section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
   font-weight: 600;
 }
 
-section .bloquecontact {
-  background: rgb(250, 247, 247);
-  background: linear-gradient(180deg, rgb(250, 247, 247) 0%, rgba(102, 0, 0, 0.7091036244) 64%);
+.formulario {
   padding: 20px;
+  background-color: rgba(102, 0, 0, 0.6862745098);
+  font-family: "Durer";
+  font-size: 20pt;
+  font-weight: bold;
+  color: black;
+  border-radius: 2%;
 }
-section .enviarbt {
+.formulario .enviarbt {
   margin-bottom: 50px;
 }
-section h2 {
+.formulario h2 {
   padding-top: 40px;
   color: #660000;
+  font-weight: bold;
+  font-family: "Yeseva One";
+  text-shadow: 1px 1px white;
 }
-section p .text-center {
-  color: #660000;
-  font-size: 20px;
-  font-family: "Durer", sans-serif;
-}
-section ul li #contact-form {
+.formulario ul li #contact-form {
   color: white;
 }
-section ul li .dataform {
-  color: #660000;
+.formulario ul li .dataform {
+  color: black;
 }
 .tienda-section {
   padding: 50px;
@@ -667,7 +665,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-section .suscripcion .content, .proyectoimgs .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -678,29 +676,29 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+.suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  .suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
     font-size: 12pt;
   }
 }
-section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -801,7 +799,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
-section .suscripcion .content, .proyectoimgs .suscripcion .content {
+.suscripcion .content {
   max-width: 650px;
   width: auto;
   margin: 0 auto;
@@ -812,29 +810,29 @@ section .suscripcion .content, .proyectoimgs .suscripcion .content {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion .content, .proyectoimgs .suscripcion .content {
+  .suscripcion .content {
     padding: 8px;
   }
 }
-section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+.suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
   color: #080808;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  section .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  .suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
     font-size: 12pt;
   }
 }
-section .suscripcion .form-control, .proyectoimgs .suscripcion .form-control {
+.suscripcion .form-control {
   height: 50px;
   border-color: #ffffff;
   border-radius: 0;
 }
-section .suscripcion .form-control:focus, .proyectoimgs .suscripcion .form-control:focus {
+.suscripcion .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
+.suscripcion .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;

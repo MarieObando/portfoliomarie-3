@@ -1,42 +1,32 @@
-
 @import '../base/extend';
 
-section {
+.formulario {
 
 
-    .bloquecontact {
+    padding: 20px;
+    background-color: #660000af;
+    font-family: 'Durer';
+    font-size: 20pt;
+    font-weight: bold;
+    color: black;
+    border-radius: 2%;
 
-        background: rgb(250, 247, 247);
-        background: linear-gradient(180deg, rgba(250, 247, 247, 1) 0%, rgba(102, 0, 0, 0.7091036243599003) 64%);
-        padding: 20px;
 
-       
-        
-    
-    }
-    
+
+
+
     .enviarbt {
-    
+
         margin-bottom: 50px;
     }
-    
+
     h2 {
-    
+
         padding-top: 40px;
         color: #660000;
-    
-    }
-
-
-    p {
-
-        .text-center {
-    
-            color: #660000;
-            font-size: 20px;
-            font-family: 'Durer', sans-serif;
-        }
-
+        font-weight: bold;
+        font-family: 'Yeseva One';
+        text-shadow: 1px 1px white;
 
     }
 
@@ -44,16 +34,16 @@ section {
 
         li {
 
-            
-        #contact-form {
-            color: white;
-        }
-        
-        .dataform {
-            color: #660000;
+
+            #contact-form {
+                color: white;
+            }
+
+            .dataform {
+                color: black;
 
 
-        }
+            }
 
 
         }
@@ -68,8 +58,7 @@ section {
         @extend %suscripcioncuadro;
 
     }
-    
+
 
 
 }
-
