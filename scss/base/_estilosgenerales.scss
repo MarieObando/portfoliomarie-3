@@ -17,44 +17,5 @@ body {
     src: url(../font/Durer.ttf);
 }
 
-.mensajecons {
-
-    text-align: center;
-
-    a {
-
-        text-decoration: none;
-        color: black;
-       
 
 
-    }
-   
-}
-
-.enconstruccion {
-
-    font-size: 100pt;
-    font-weight: 500;
-    margin-top: 100px;
-    width: 100%;
-    font-family: 'Durer';
-    text-align: center;
-    padding: 20px;
-
-
-
-    @media screen and (max-width: 810px) {
-
-        font-size: 50pt;
-
-    }
-
-    @media screen and (max-width: 428px) {
-
-        font-size: 30pt;
-
-    }
-
-
-}

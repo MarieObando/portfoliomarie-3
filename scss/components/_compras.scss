@@ -2,8 +2,8 @@
 
 .tienda-section {
     @extend %gridgalerias;
-    
-    
+
+
     .tiendatext {
 
         p {
@@ -54,6 +54,87 @@
     }
 
 
+
+
+
+}
+
+
+/* en construccion section */
+
+.mensajecons {
+
+
+    background-size: cover;
+    filter: opacity(90%);
+    width: 100%;
+    min-height: 120vh;
+    position: relative;
+    font-family: 'Durer';
+
+
+    .color-overlay {
+
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+
+        h1 {
+
+            text-shadow: 3px 3px 3px white;
+            font-size: 100pt;
+            font-weight: 800;
+            color: #660000;
+            background-color: rgba(255, 255, 255, 0.473);
+            margin: 10px;
+
+            @media screen and (max-width: 810px) {
+
+                font-size: 50pt;
+    
+            }
+    
+            @media screen and (max-width: 428px) {
+    
+                font-size: 30pt;
+    
+            }
+        }
+
+
+        a {
+
+            text-decoration: none;
+            color: white;
+            font-size: 30pt;
+            text-shadow: 3px 3px 3px black;
+
+
+
+            @media screen and (max-width: 810px) {
+
+                font-size: 20pt;
+
+            }
+
+            @media screen and (max-width: 428px) {
+
+                font-size: 16pt;
+
+            }
+
+
+
+        }
+
+       
+
+
+
+
+    }
 
 
 

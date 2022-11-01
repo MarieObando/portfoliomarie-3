@@ -102,7 +102,7 @@ section {
 
     @media screen and (max-width: 810px) {
 
-        font-size: 8pt;
+        font-size: 10pt;
         display: flex;
         flex-direction: column;
 
@@ -115,7 +115,9 @@ section {
 .statement {
 
     padding: auto;
-    color: #660000;
+    color: white;
+    font: weight 800px;
+    
 
     h2 {
         margin: 50px;
@@ -140,10 +142,24 @@ section {
         font-family: 'Mukta Malar',
         sans-serif;
         font-size: 20px;
+        
+        
+        
 
         div {
             margin-bottom: 20px;
+            background-color: #660000b0;
+            padding: 10px;
+            
         }
+
+        @media screen and (max-width: 560px) {
+
+            
+            font-size: 16pt;
+    
+        }
+
 
 
         
@@ -156,6 +172,7 @@ section {
 
         display: flex;
         flex-direction: column;
+        font-size: 16pt;
 
     }
 

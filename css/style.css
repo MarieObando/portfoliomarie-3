@@ -64,34 +64,6 @@ body {
   font-family: "Durer";
   src: url(../font/Durer.ttf);
 }
-.mensajecons {
-  text-align: center;
-}
-.mensajecons a {
-  text-decoration: none;
-  color: black;
-}
-
-.enconstruccion {
-  font-size: 100pt;
-  font-weight: 500;
-  margin-top: 100px;
-  width: 100%;
-  font-family: "Durer";
-  text-align: center;
-  padding: 20px;
-}
-@media screen and (max-width: 810px) {
-  .enconstruccion {
-    font-size: 50pt;
-  }
-}
-@media screen and (max-width: 428px) {
-  .enconstruccion {
-    font-size: 30pt;
-  }
-}
-
 .tienda-section {
   padding: 50px;
   text-align: center;
@@ -364,7 +336,7 @@ section .tiendawrapimagenes {
 }
 @media screen and (max-width: 810px) {
   .about-section {
-    font-size: 8pt;
+    font-size: 10pt;
     display: flex;
     flex-direction: column;
   }
@@ -372,7 +344,8 @@ section .tiendawrapimagenes {
 
 .statement {
   padding: auto;
-  color: #660000;
+  color: white;
+  font: weight 800px;
   /*mobile responsive info*/
 }
 .statement h2 {
@@ -389,11 +362,19 @@ section .tiendawrapimagenes {
 }
 .statement #statementtext div {
   margin-bottom: 20px;
+  background-color: rgba(102, 0, 0, 0.6901960784);
+  padding: 10px;
+}
+@media screen and (max-width: 560px) {
+  .statement #statementtext {
+    font-size: 16pt;
+  }
 }
 @media screen and (max-width: 560px) {
   .statement {
     display: flex;
     flex-direction: column;
+    font-size: 16pt;
   }
 }
 
@@ -751,6 +732,56 @@ section .suscripcion .btn, .proyectoimgs .suscripcion .btn {
     font-size: 8pt;
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* en construccion section */
+.mensajecons {
+  background-size: cover;
+  filter: opacity(90%);
+  width: 100%;
+  min-height: 120vh;
+  position: relative;
+  font-family: "Durer";
+}
+.mensajecons .color-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.mensajecons .color-overlay h1 {
+  text-shadow: 3px 3px 3px white;
+  font-size: 100pt;
+  font-weight: 800;
+  color: #660000;
+  background-color: rgba(255, 255, 255, 0.473);
+  margin: 10px;
+}
+@media screen and (max-width: 810px) {
+  .mensajecons .color-overlay h1 {
+    font-size: 50pt;
+  }
+}
+@media screen and (max-width: 428px) {
+  .mensajecons .color-overlay h1 {
+    font-size: 30pt;
+  }
+}
+.mensajecons .color-overlay a {
+  text-decoration: none;
+  color: white;
+  font-size: 30pt;
+  text-shadow: 3px 3px 3px black;
+}
+@media screen and (max-width: 810px) {
+  .mensajecons .color-overlay a {
+    font-size: 20pt;
+  }
+}
+@media screen and (max-width: 428px) {
+  .mensajecons .color-overlay a {
+    font-size: 16pt;
   }
 }
 
