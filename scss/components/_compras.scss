@@ -1,6 +1,8 @@
 @import '../base/extend';
 
 .tienda-section {
+
+
     @extend %gridgalerias;
 
 
@@ -10,25 +12,34 @@
         background-color: rgba(255, 255, 255, 0.274);
         border-radius: 10%;
         padding: 10px;
-        
+
 
         p {
 
             font-family: 'Yeseva One', sans-serif;
             padding: 20px;
-            font-size: 16pt;
+            font-size: 18pt;
             text-align: left;
-            
+
 
 
 
             @media screen and (max-width: 810px) {
 
-                font-size: 12pt;
-
+                padding: 10px;
+                margin-top: 10px;
+                font-size: 14pt;
 
             }
 
+
+        }
+
+
+        @media screen and (max-width: 810px) {
+
+            
+            margin-top: 20px;
 
         }
 
@@ -44,28 +55,14 @@
         display: flex;
         flex-direction: column;
 
-
-
     }
-
-
 
     .containerfototienda img {
 
         width: 400px
     }
 
-    @media screen and (max-width: 810px) {
-
-        font-size: 8pt;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-
-
-
+   
 
 }
 
@@ -75,7 +72,7 @@
 .mensajecons {
 
 
-    
+
     filter: opacity(90%);
     padding-top: 200px;
     padding-bottom: 400px;
@@ -83,19 +80,19 @@
     justify-content: center;
     font-family: 'Durer';
     background-image: url(../pictures/imgconstrucc.JPG);
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
     background-position: center;
     background-size: cover;
-    
+
 
 
     .color-overlay {
 
-        
-    
+
+
         text-align: center;
 
-        
+
 
 
         h1 {
@@ -110,13 +107,13 @@
             @media screen and (max-width: 810px) {
 
                 font-size: 50pt;
-    
+
             }
-    
+
             @media screen and (max-width: 428px) {
-    
+
                 font-size: 30pt;
-    
+
             }
         }
 
@@ -146,7 +143,7 @@
 
         }
 
-       
+
 
     }
 

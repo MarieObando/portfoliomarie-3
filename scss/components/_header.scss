@@ -33,16 +33,16 @@ header {
         @media screen and (max-width: 810px) {
 
             font-size: 80pt;
-            text-align: left;
-          
+            
             
         }
 
         @media screen and (max-width: 415px) {
 
-            font-size: 60pt;
-            text-align: left;
-          
+            font-size: 50pt;
+
+            height: 200px;
+            
             
         }
 
@@ -84,6 +84,7 @@ header {
             }
 
         }
+
 
 
     }

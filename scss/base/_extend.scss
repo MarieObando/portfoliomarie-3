@@ -7,6 +7,13 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
 
+    @media screen and (max-width: 810px) {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
 
 }
 
@@ -43,6 +50,7 @@
         @media screen and (max-width: 560px) {
 
             padding: 8px;
+            margin-top: 50px;
 
         }
     }

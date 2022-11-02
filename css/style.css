@@ -3,7 +3,7 @@ header h1 {
   padding: 20px;
   margin: 0 auto;
   height: 300px;
-  font-size: 132pt;
+  font-size: 13vw;
   border-bottom: #660000 solid;
   background-color: white;
   text-align: center;
@@ -21,13 +21,12 @@ header h1 a:hover {
 @media screen and (max-width: 810px) {
   header h1 {
     font-size: 80pt;
-    text-align: left;
   }
 }
 @media screen and (max-width: 415px) {
   header h1 {
-    font-size: 60pt;
-    text-align: left;
+    font-size: 50pt;
+    height: 200px;
   }
 }
 header .navbar {
@@ -72,6 +71,12 @@ body {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section .tiendawrapimagenes {
   display: flex;
@@ -93,6 +98,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
@@ -198,13 +204,10 @@ footer div p {
 }
 @media screen and (max-width: 560px) {
   footer div p {
-    font-size: 8pt;
+    font-size: 12pt;
     padding-top: 30px;
-  }
-}
-@media screen and (max-width: 560px) {
-  footer {
-    height: 180px;
+    padding-bottom: 30px;
+    margin: 0px;
   }
 }
 
@@ -215,6 +218,12 @@ footer div p {
   color: #660000;
   display: grid;
   grid-template-columns: 3fr 2fr;
+}
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 section .tiendawrapimagenes {
@@ -237,6 +246,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
@@ -392,6 +402,12 @@ section .tiendawrapimagenes {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section .tiendawrapimagenes {
   display: flex;
@@ -413,6 +429,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
@@ -504,6 +521,12 @@ section .tiendawrapimagenes {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section .tiendawrapimagenes {
   display: flex;
@@ -525,6 +548,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
@@ -585,6 +609,12 @@ section .btn {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section .tiendawrapimagenes {
   display: flex;
@@ -606,6 +636,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
@@ -636,15 +667,19 @@ section .tiendawrapimagenes {
 
 .formulario {
   padding: 20px;
-  background-color: rgba(102, 0, 0, 0.6862745098);
+  border: 2px solid #660000;
   font-family: "Durer";
   font-size: 20pt;
   font-weight: bold;
   color: black;
   border-radius: 2%;
+  box-shadow: 0px 3px 28px 0px rgba(0, 0, 0, 0.75);
 }
 .formulario .enviarbt {
   margin-bottom: 50px;
+}
+.formulario .enviarbt a {
+  font-size: 30px;
 }
 .formulario h2 {
   padding-top: 40px;
@@ -667,6 +702,12 @@ section .tiendawrapimagenes {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section .tiendawrapimagenes {
   display: flex;
@@ -688,6 +729,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
@@ -724,12 +766,19 @@ section .tiendawrapimagenes {
 .tienda-section .tiendatext p {
   font-family: "Yeseva One", sans-serif;
   padding: 20px;
-  font-size: 16pt;
+  font-size: 18pt;
   text-align: left;
 }
 @media screen and (max-width: 810px) {
   .tienda-section .tiendatext p {
-    font-size: 12pt;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 810px) {
+  .tienda-section .tiendatext {
+    margin-top: 20px;
   }
 }
 .tienda-section .containerfototienda {
@@ -740,13 +789,6 @@ section .tiendawrapimagenes {
 }
 .tienda-section .containerfototienda img {
   width: 400px;
-}
-@media screen and (max-width: 810px) {
-  .tienda-section {
-    font-size: 8pt;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* en construccion section */
@@ -808,6 +850,12 @@ section .tiendawrapimagenes {
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
+@media screen and (max-width: 810px) {
+  .tienda-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section .tiendawrapimagenes {
   display: flex;
@@ -829,6 +877,7 @@ section .tiendawrapimagenes {
 @media screen and (max-width: 560px) {
   .suscripcion .content {
     padding: 8px;
+    margin-top: 50px;
   }
 }
 .suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
