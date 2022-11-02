@@ -20,12 +20,12 @@ header h1 a:hover {
 }
 @media screen and (max-width: 810px) {
   header h1 {
-    font-size: 60pt;
+    height: 150px;
   }
 }
 @media screen and (max-width: 415px) {
   header h1 {
-    height: 200px;
+    height: 110px;
     padding: 10px;
   }
 }
@@ -128,45 +128,15 @@ section .tiendawrapimagenes {
 }
 
 .fotindex {
+  display: flex;
+  align-items: center;
   background-color: #660000;
-  color: black;
-  text-shadow: 2px 2px white;
+}
+.fotindex .indeximagen {
   filter: opacity(50%);
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/a2c41194077739.5e8c608d2a6fd.jpg);
-  padding-top: 600px;
-  padding-bottom: 600px;
   filter: brightness(1.35);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: multiply;
-}
-.fotindex h2 {
-  text-align: center;
-  font-size: 80pt;
-  background-color: rgba(255, 255, 255, 0.1568627451);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (max-width: 810px) {
-  .fotindex h2 {
-    font-size: 40pt;
-    background-color: rgba(255, 255, 255, 0.4392156863);
-  }
-}
-@media screen and (max-width: 810px) {
-  .fotindex {
-    width: 800px;
-    font-size: 40pt;
-  }
-}
-@media screen and (max-width: 560px) {
-  .fotindex {
-    width: 500px;
-    height: 100px;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    background-blend-mode: normal;
-  }
+  width: 100%;
+  height: auto;
 }
 
 div marquee {
@@ -176,7 +146,7 @@ div marquee {
 }
 @media screen and (max-width: 810px) {
   div marquee {
-    font-size: 40pt;
+    font-size: 60pt;
   }
 }
 
@@ -206,9 +176,14 @@ footer div p {
 @media screen and (max-width: 560px) {
   footer div p {
     font-size: 12pt;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0px;
+  }
+}
+@media screen and (max-width: 560px) {
+  footer {
+    height: 200px;
   }
 }
 
@@ -680,7 +655,12 @@ section .tiendawrapimagenes {
   margin-bottom: 50px;
 }
 .formulario .enviarbt a {
-  font-size: 30px;
+  font-size: 30pt;
+}
+@media screen and (max-width: 415px) {
+  .formulario .enviarbt a {
+    font-size: 16pt;
+  }
 }
 .formulario h2 {
   padding-top: 40px;
@@ -694,6 +674,11 @@ section .tiendawrapimagenes {
 }
 .formulario ul li .dataform {
   color: black;
+}
+@media screen and (max-width: 415px) {
+  .formulario ul li .dataform {
+    font-size: 16pt;
+  }
 }
 .tienda-section {
   padding: 50px;

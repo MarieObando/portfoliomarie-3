@@ -25,7 +25,14 @@
         a {
 
 
-            font-size: 30px;
+            font-size: 30pt;
+
+            @media screen and (max-width: 415px) {
+
+                font-size: 16pt;
+                
+                
+            }
 
 
 
@@ -56,6 +63,15 @@
 
             .dataform {
                 color: black;
+
+                @media screen and (max-width: 415px) {
+
+                    font-size: 16pt;
+                    
+                    
+                }
+
+
 
 
             }
