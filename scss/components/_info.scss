@@ -20,7 +20,7 @@ section {
     color: #660000;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    background-color: nth($colores, 4);
+    /*background-color: nth($colores, 4);*/
 
 
     .infotext {
@@ -37,7 +37,7 @@ section {
 
             @media screen and (max-width: 560px) {
 
-                font-size: 12pt;
+                font-size: 16pt;
 
             }
 
@@ -47,7 +47,7 @@ section {
 
         @media screen and (max-width: 560px) {
 
-            font-size: 12pt;
+            font-size: 16pt;
 
         }
 
@@ -104,6 +104,7 @@ section {
         font-size: 10pt;
         display: flex;
         flex-direction: column;
+        padding: 40px;
 
     }
 
@@ -120,7 +121,11 @@ section {
     background-repeat: repeat;
     background-size: cover;
     border-radius: 2%;
-    
+    font-family: 'Mukta Malar',
+        sans-serif;
+    font-size: 20px;
+    text-align: justify;
+
 
     h2 {
         margin: 50px;
@@ -128,58 +133,47 @@ section {
 
     }
 
-    .videoinfo {
 
-
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        border-radius: 15%;
-
-
-
-    }
-
-
-
-   
 
     #statementtext {
 
-
-        
-
-
         width: 100%;
         margin: 0 auto;
-        padding: 50px;
-        text-align: justify;
-        font-family: 'Mukta Malar',
-        sans-serif;
-        font-size: 20px;
+        padding: 20px;
+       
         
-        
-        
-
         div {
             margin-bottom: 20px;
             background-color: rgba(255, 255, 255, 0.856);
-            padding: 10px;
+            padding: 5px;
             border-radius: 10%;
-            
+
+            .p {
+
+                font-size: 20pt;
+                @media screen and (max-width: 560px) {
+
+                    font-size: 5pt;
+                    
+        
+                }
+            }
+
         }
+
+
+       
 
         @media screen and (max-width: 560px) {
 
+            padding: 5px;
             
-            font-size: 16pt;
-    
+
         }
 
 
 
-        
+
     }
 
 
@@ -189,13 +183,8 @@ section {
 
         display: flex;
         flex-direction: column;
-        font-size: 16pt;
 
     }
-
-
-
-
 
 
 }

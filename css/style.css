@@ -121,36 +121,45 @@ section .tiendawrapimagenes {
   font-weight: 600;
 }
 
-img {
-  filter: brightness(1.25);
-  margin: 0 auto;
+.fotindex {
+  background-color: #660000;
+  color: black;
+  text-shadow: 2px 2px white;
+  filter: opacity(50%);
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/a2c41194077739.5e8c608d2a6fd.jpg);
+  padding-top: 600px;
+  padding-bottom: 600px;
+  filter: brightness(1.35);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
 }
-
-/*.illus {
-                margin-bottom: 500px;
-
-                @media screen and (max-width: 810px) {
-
-                    display: none;
-                }
-
-            }
-
-            .tration {
-                margin-top: 500px;
-
-                @media screen and (max-width: 810px) {
-
-                    display: none;
-                }
-
-            }*/
-section .fotoindex {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.fotindex h2 {
+  text-align: center;
+  font-size: 80pt;
+  background-color: rgba(255, 255, 255, 0.1568627451);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 810px) {
+  .fotindex h2 {
+    font-size: 40pt;
+  }
+}
+@media screen and (max-width: 810px) {
+  .fotindex {
+    width: 800px;
+    font-size: 40pt;
+  }
+}
+@media screen and (max-width: 560px) {
+  .fotindex {
+    width: 500px;
+    height: 100px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-blend-mode: normal;
+  }
 }
 
 div marquee {
@@ -195,7 +204,7 @@ footer div p {
 }
 @media screen and (max-width: 560px) {
   footer {
-    height: 150px;
+    height: 180px;
   }
 }
 
@@ -263,7 +272,7 @@ section .tiendawrapimagenes {
   color: #660000;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  background-color: rgba(204, 204, 204, 0.2117647059);
+  /*background-color: nth($colores, 4);*/
 }
 .about-section .infotext {
   font-family: "Mukta Malar", sans-serif;
@@ -278,12 +287,12 @@ section .tiendawrapimagenes {
 }
 @media screen and (max-width: 560px) {
   .about-section .infotext .mainline {
-    font-size: 12pt;
+    font-size: 16pt;
   }
 }
 @media screen and (max-width: 560px) {
   .about-section .infotext {
-    font-size: 12pt;
+    font-size: 16pt;
   }
 }
 @keyframes float {
@@ -323,6 +332,7 @@ section .tiendawrapimagenes {
     font-size: 10pt;
     display: flex;
     flex-direction: column;
+    padding: 40px;
   }
 }
 
@@ -334,43 +344,43 @@ section .tiendawrapimagenes {
   background-repeat: repeat;
   background-size: cover;
   border-radius: 2%;
+  font-family: "Mukta Malar", sans-serif;
+  font-size: 20px;
+  text-align: justify;
   /*mobile responsive info*/
 }
 .statement h2 {
   margin: 50px;
   font-family: "Durer";
 }
-.statement .videoinfo {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  border-radius: 15%;
-}
 .statement #statementtext {
   width: 100%;
   margin: 0 auto;
-  padding: 50px;
-  text-align: justify;
-  font-family: "Mukta Malar", sans-serif;
-  font-size: 20px;
+  padding: 20px;
 }
 .statement #statementtext div {
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.856);
-  padding: 10px;
+  padding: 5px;
   border-radius: 10%;
+}
+.statement #statementtext div .p {
+  font-size: 20pt;
+}
+@media screen and (max-width: 560px) {
+  .statement #statementtext div .p {
+    font-size: 5pt;
+  }
 }
 @media screen and (max-width: 560px) {
   .statement #statementtext {
-    font-size: 16pt;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 560px) {
   .statement {
     display: flex;
     flex-direction: column;
-    font-size: 16pt;
   }
 }
 
@@ -706,10 +716,16 @@ section .tiendawrapimagenes {
   font-weight: 600;
 }
 
-.tienda-section .tiendatext p {
-  font-family: "Mukta Malar", sans-serif;
+.tienda-section .tiendatext {
+  background-color: rgba(255, 255, 255, 0.274);
+  border-radius: 10%;
   padding: 10px;
-  font-size: 20pt;
+}
+.tienda-section .tiendatext p {
+  font-family: "Yeseva One", sans-serif;
+  padding: 20px;
+  font-size: 16pt;
+  text-align: left;
 }
 @media screen and (max-width: 810px) {
   .tienda-section .tiendatext p {
@@ -735,17 +751,18 @@ section .tiendawrapimagenes {
 
 /* en construccion section */
 .mensajecons {
-  background-size: cover;
   filter: opacity(90%);
-  width: 100%;
-  min-height: 120vh;
-  position: relative;
+  padding-top: 200px;
+  padding-bottom: 400px;
+  display: flex;
+  justify-content: center;
   font-family: "Durer";
+  background-image: url(../pictures/imgconstrucc.JPG);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
 }
 .mensajecons .color-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   text-align: center;
 }
 .mensajecons .color-overlay h1 {
@@ -846,6 +863,14 @@ section .tiendawrapimagenes {
   text-align: center;
   margin-top: 100px;
 }
+@media screen and (max-width: 810px) {
+  .containerfotoobra {
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
 
 .obraimage {
   background-color: white;
@@ -858,17 +883,17 @@ section .tiendawrapimagenes {
 }
 
 .obratext {
-  background-color: white;
   padding: 10px;
   flex: 50%;
   font-size: 16pt;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 810px) {
   .obratext {
     font-size: 12pt;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
 }
 
