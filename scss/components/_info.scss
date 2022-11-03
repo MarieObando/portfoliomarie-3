@@ -25,9 +25,28 @@ section {
 
     .infotext {
 
-        font-family: 'Mukta Malar', sans-serif;
-        padding: 10px;
-        font-size: 20px;
+        p {
+
+            font-family: 'Mukta Malar', sans-serif;
+            padding: 10px;
+            font-size: 20px;
+
+
+
+        }
+
+
+
+        a {
+
+            color: #660000;
+            text-decoration: underline;
+            font-weight: bolder;
+            font-style: italic;
+
+
+        }
+
 
         .mainline {
 
@@ -35,7 +54,7 @@ section {
             padding: 10px;
             font-size: 30px;
 
-            @media screen and (max-width: 560px) {
+            @media screen and (max-width: 480px) {
 
                 font-size: 16pt;
 
@@ -45,7 +64,7 @@ section {
 
         /*mobile responsive info*/
 
-        @media screen and (max-width: 560px) {
+        @media screen and (max-width: 480px) {
 
             font-size: 16pt;
 
@@ -114,16 +133,12 @@ section {
 
 .statement {
 
-    padding: auto;
+    
     color: #660000;
-    font: weight 800px;
-    margin: 30px;
     background-repeat: repeat;
     background-size: cover;
-    border-radius: 2%;
     font-family: 'Mukta Malar',
         sans-serif;
-    font-size: 20px;
     text-align: justify;
 
 
@@ -133,6 +148,14 @@ section {
 
     }
 
+    h3 {
+        font-family: 'Durer';
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: rgba(255, 255, 255, 0.589);
+        border-radius: 10%;
+    }
+
 
 
     #statementtext {
@@ -140,34 +163,33 @@ section {
         width: 100%;
         margin: 0 auto;
         padding: 20px;
-       
-        
-        div {
-            margin-bottom: 20px;
+
+
+        p {
+
+            margin-bottom: 30px;
             background-color: rgba(255, 255, 255, 0.856);
-            padding: 5px;
+            padding: 10px;
             border-radius: 10%;
+            font-size: 16pt;
 
-            .p {
+            @media screen and (max-width: 480px) {
 
-                font-size: 20pt;
-                @media screen and (max-width: 560px) {
+                font-size: 14pt;
 
-                    font-size: 5pt;
-                    
-        
-                }
+
             }
-
         }
 
 
-       
+
+
+
 
         @media screen and (max-width: 560px) {
 
             padding: 5px;
-            
+
 
         }
 

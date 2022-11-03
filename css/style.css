@@ -261,22 +261,30 @@ section .tiendawrapimagenes {
   /*background-color: nth($colores, 4);*/
 }
 .about-section .infotext {
+  /*mobile responsive info*/
+}
+.about-section .infotext p {
   font-family: "Mukta Malar", sans-serif;
   padding: 10px;
   font-size: 20px;
-  /*mobile responsive info*/
+}
+.about-section .infotext a {
+  color: #660000;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-style: italic;
 }
 .about-section .infotext .mainline {
   font-family: "Durer", sans-serif;
   padding: 10px;
   font-size: 30px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
   .about-section .infotext .mainline {
     font-size: 16pt;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
   .about-section .infotext {
     font-size: 16pt;
   }
@@ -323,15 +331,10 @@ section .tiendawrapimagenes {
 }
 
 .statement {
-  padding: auto;
   color: #660000;
-  font: weight 800px;
-  margin: 30px;
   background-repeat: repeat;
   background-size: cover;
-  border-radius: 2%;
   font-family: "Mukta Malar", sans-serif;
-  font-size: 20px;
   text-align: justify;
   /*mobile responsive info*/
 }
@@ -339,23 +342,28 @@ section .tiendawrapimagenes {
   margin: 50px;
   font-family: "Durer";
 }
+.statement h3 {
+  font-family: "Durer";
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.589);
+  border-radius: 10%;
+}
 .statement #statementtext {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
-.statement #statementtext div {
-  margin-bottom: 20px;
+.statement #statementtext p {
+  margin-bottom: 30px;
   background-color: rgba(255, 255, 255, 0.856);
-  padding: 5px;
+  padding: 10px;
   border-radius: 10%;
+  font-size: 16pt;
 }
-.statement #statementtext div .p {
-  font-size: 20pt;
-}
-@media screen and (max-width: 560px) {
-  .statement #statementtext div .p {
-    font-size: 5pt;
+@media screen and (max-width: 480px) {
+  .statement #statementtext p {
+    font-size: 14pt;
   }
 }
 @media screen and (max-width: 560px) {
