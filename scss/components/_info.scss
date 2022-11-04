@@ -7,11 +7,11 @@
 .about-section {
     padding: 50px;
     margin: 10px;
-    text-align: justify;
+    text-align: left;
     color: #660000;
     display: grid;
     grid-template-columns: 3fr 2fr;
-   
+
 
 
     .infotext {
@@ -22,13 +22,26 @@
 
         .mainline {
 
-            font-family: 'Durer', sans-serif;
+            font-family: 'Yeseva One', sans-serif;
             padding: 10px;
-            font-size: 30px;
+            font-size: 25px;
 
 
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            transition-duration: 0.3s;
+            transition-property: transform;
 
-           
+
+            &:hover,
+            &:focus,
+            &:active {
+                transform: scale(1.1);
+            }
 
 
             @include infomainlinetablet;
@@ -38,7 +51,7 @@
         }
 
 
-        
+
 
         a {
 
@@ -50,7 +63,7 @@
         }
 
 
-       
+
 
 
 
@@ -67,17 +80,17 @@
 
     @keyframes float {
         0% {
-            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.712);
             transform: translatey(0px);
         }
 
         50% {
-            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 15px 0px rgba(247, 244, 244, 0.377);
             transform: translatey(-20px);
         }
 
         100% {
-            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 5px 15px 0px rgba(240, 236, 236, 0.623);
             transform: translatey(0px);
         }
     }
@@ -95,12 +108,13 @@
     img {
         width: 400px;
         box-sizing: border-box;
-        border: 5px #660000 solid;
+        border: 5px cyan solid;
         border-radius: 50%;
         overflow: hidden;
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
         transform: translatey(0px);
         animation: float 6s ease-in-out infinite;
+        filter: invert(1.1);
 
     }
 
@@ -121,22 +135,21 @@
     background-size: cover;
     font-family: 'Mukta Malar',
         sans-serif;
-    text-align: justify;
+    text-align: left;
 
 
     h2 {
         margin: 50px;
-        font-family: 'Durer';
+        font-family: 'Yeseva One';
 
     }
 
     h3 {
-        font-family: 'Durer';
+        font-family: 'Yeseva One';
         margin-top: 50px;
         margin-bottom: 50px;
-        background-color: rgba(255, 255, 255, 0.589);
-        border-radius: 20%;
         padding: 10px;
+        background-color: white;
     }
 
 
@@ -153,7 +166,6 @@
             margin-bottom: 30px;
             background-color: rgba(255, 255, 255, 0.856);
             padding: 25px;
-            border-radius: 25%;
             font-size: 16pt;
 
             @media screen and (max-width: 480px) {

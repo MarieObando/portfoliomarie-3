@@ -1,5 +1,8 @@
 @import '../base/extend';
 
+
+/* section de tienda */
+
 .tienda-section {
 
 
@@ -78,7 +81,7 @@
     padding-bottom: 400px;
     display: flex;
     justify-content: center;
-    font-family: 'Durer';
+    font-family: 'League Gothic', sans-serif;
     background-image: url(../pictures/imgconstrucc.JPG);
     background-repeat: repeat-x;
     background-position: center;
@@ -98,8 +101,8 @@
         h1 {
 
             text-shadow: 3px 3px 3px white;
-            font-size: 100pt;
-            font-weight: 800;
+            font-size: 80pt;
+            font-weight: 500;
             color: #660000;
             background-color: rgba(255, 255, 255, 0.473);
             margin: 10px;

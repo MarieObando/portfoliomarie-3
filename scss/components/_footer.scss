@@ -7,6 +7,12 @@ footer {
     background: rgb(250, 247, 247);
     background: $footer-gradient-color;
 
+    h2 {
+        text-align: center;
+        margin: 30px;
+        font-family: 'League Gothic', sans-serif;
+    }
+
     div {
 
         img {
@@ -29,8 +35,10 @@ footer {
 
 
             font-family: $footer-font-family;
-            color: white;
-            padding-top: 70px;
+            color: black;
+            text-decoration: underline;
+            font-weight: bold;
+            padding-top: 15px;
             font-size: 14pt;
 
             @media screen and (max-width: 560px) {
@@ -41,12 +49,17 @@ footer {
 
             }
 
+            @media screen and (max-width: 560px) {
+                padding-top: 40px;
+         
+             }
+
         }
 
     }
 
     @media screen and (max-width: 560px) {
-       height: 200px;
+       height: 350px;
 
     }
 

@@ -6,8 +6,6 @@ section {
 
 
 
-
-
     .tiendawrapimagenes {
 
         @extend %gridtiendageneral;
@@ -19,8 +17,6 @@ section {
         @include wrapimagenesdostablet; 
        
     }
-
-   
 
    
 
@@ -40,11 +36,7 @@ section {
             }
 
 
-
-
         }
-
-
 
         .storesubcontent {
 
@@ -67,11 +59,11 @@ section {
 
         border: 2px #660000 solid;
         margin-bottom: 20px;
-        font-family: 'Durer';
+        font-family: 'Mukta Malar';
         font-weight: bold;
        
-       
     }
+
 
     .btn {
 

@@ -7,13 +7,12 @@
     display: flex;
     align-items: center;
     background-color: #660000;
+    
 
-
-
+   
 
 
     .indeximagen {
-
 
 
         filter: opacity(50%);
@@ -21,12 +20,11 @@
         width: 100%;
         height: auto;
 
+        
+    
 
 
     }
-
-
-
 
 
 
@@ -50,7 +48,7 @@ div {
 
         font-size: 100pt;
         border-top: 2px #660000 solid;
-        font-family: 'shrimp', sans-serif;
+        font-family: 'League Gothic', sans-serif;
 
         @media screen and (max-width: 810px) {
 
