@@ -1,0 +1,77 @@
+/*mixin*/
+
+
+/*responsive celulares info*/
+
+@mixin infoboxyresponsive ($media: 480px, $padding: 15px) {
+
+    @media screen and (max-width: $media) {
+
+        padding: $padding;
+
+    }
+}
+
+
+@mixin infomainlinecelular ($media: 480px, $padding: 10px, $fontsize: 12pt, $margin: 10px) {
+
+    @media screen and (max-width: $media) {
+
+        padding: $padding;
+        font-size: $fontsize;
+        margin-top: $margin;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+/*responsive tablets info*/
+
+
+
+@mixin infoboxyrespontablet ($media: 810px, $padding: 40px, $display: flex, $direction: column, $fontsize: 10pt) {
+
+    @media screen and (max-width: $media) {
+
+        padding: $padding;
+        display: $display;
+        flex-direction: $direction;
+        font-size: $fontsize;
+
+
+    }
+}
+
+
+@mixin infomainlinetablet ($media: 810px, $padding: 40px, $fontsize: 10pt, $margin: 10px) {
+
+    @media screen and (max-width: $media) {
+
+        padding: 10px;
+        font-size: 20pt;
+        margin-top: $margin;
+
+
+    }
+}
+
+/*tienda*/
+
+@mixin wrapimagenesdostablet ($media: 810px, $margin: 0px, $display: flex, $wrap: wrap) {
+
+    @media screen and (max-width: $media) {
+
+        margin-top: $margin;
+        display: $display;
+        flex-wrap: $wrap;
+
+
+    }
+}

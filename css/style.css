@@ -85,6 +85,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -101,25 +102,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -209,6 +210,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -225,25 +227,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -251,6 +253,10 @@ section .tiendawrapimagenes {
   font-weight: 600;
 }
 
+/*mixin*/
+/*responsive celulares info*/
+/*responsive tablets info*/
+/*tienda*/
 .about-section {
   padding: 50px;
   margin: 10px;
@@ -258,31 +264,29 @@ section .tiendawrapimagenes {
   color: #660000;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  /*background-color: nth($colores, 4);*/
 }
 .about-section .infotext {
-  /*mobile responsive info*/
-}
-.about-section .infotext p {
   font-family: "Mukta Malar", sans-serif;
   padding: 10px;
   font-size: 20px;
-}
-.about-section .infotext a {
-  color: #660000;
-  text-decoration: underline;
-  font-weight: bolder;
-  font-style: italic;
 }
 .about-section .infotext .mainline {
   font-family: "Durer", sans-serif;
   padding: 10px;
   font-size: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 810px) {
   .about-section .infotext .mainline {
-    font-size: 16pt;
+    padding: 10px;
+    font-size: 20pt;
+    margin-top: 10px;
   }
+}
+.about-section .infotext a {
+  color: #660000;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-style: italic;
 }
 @media screen and (max-width: 480px) {
   .about-section .infotext {
@@ -323,10 +327,15 @@ section .tiendawrapimagenes {
 }
 @media screen and (max-width: 810px) {
   .about-section {
-    font-size: 10pt;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    font-size: 10pt;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-section {
+    padding: 15px;
   }
 }
 
@@ -347,7 +356,8 @@ section .tiendawrapimagenes {
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.589);
-  border-radius: 10%;
+  border-radius: 20%;
+  padding: 10px;
 }
 .statement #statementtext {
   width: 100%;
@@ -357,18 +367,19 @@ section .tiendawrapimagenes {
 .statement #statementtext p {
   margin-bottom: 30px;
   background-color: rgba(255, 255, 255, 0.856);
-  padding: 10px;
-  border-radius: 10%;
+  padding: 25px;
+  border-radius: 25%;
   font-size: 16pt;
 }
 @media screen and (max-width: 480px) {
   .statement #statementtext p {
     font-size: 14pt;
+    margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
   .statement #statementtext {
-    padding: 5px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -400,6 +411,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -416,25 +428,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .formulario .suscripcion h2, .proyectoimgs .suscripcion h2, .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -519,6 +531,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -535,25 +548,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -561,6 +574,13 @@ section .tiendawrapimagenes {
   font-weight: 600;
 }
 
+@media screen and (max-width: 810px) {
+  section .tiendawrapimagenesdos {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 section ul .storesubcontent a {
   text-decoration: none;
   color: black;
@@ -607,6 +627,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -623,25 +644,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .formulario .suscripcion h2, .suscripcion h2, .proyectoimgs .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -710,6 +731,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -726,25 +748,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -858,6 +880,7 @@ section .tiendawrapimagenes {
   margin-top: 100px;
 }
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
 .suscripcion .content {
   max-width: 650px;
   width: auto;
@@ -874,25 +897,25 @@ section .tiendawrapimagenes {
     margin-top: 50px;
   }
 }
-.suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
-  color: #080808;
+.suscripcion .content h2 {
+  color: black;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 560px) {
-  .suscripcion h2, .proyectoimgs .suscripcion h2, .formulario .suscripcion h2 {
+  .suscripcion .content h2 {
     font-size: 12pt;
   }
 }
-.suscripcion .form-control {
+.suscripcion .content .form-control {
   height: 50px;
-  border-color: #ffffff;
+  border-color: whitesmoke;
   border-radius: 0;
 }
-.suscripcion .form-control:focus {
+.suscripcion .content .form-control:focus {
   box-shadow: none;
   border: 2px solid #660000;
 }
-.suscripcion .btn {
+.suscripcion .content .btn {
   min-height: 50px;
   border-radius: 20;
   background: #660000;
@@ -900,6 +923,10 @@ section .tiendawrapimagenes {
   font-weight: 600;
 }
 
+/*mixin*/
+/*responsive celulares info*/
+/*responsive tablets info*/
+/*tienda*/
 .containerfotoobra {
   display: flex;
   flex-direction: column;

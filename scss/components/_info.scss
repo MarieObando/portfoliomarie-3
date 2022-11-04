@@ -1,16 +1,7 @@
 @import '../base/listas';
 @import '../base/extend';
+@import '../base/mixin';
 
-section {
-
-    .suscripcion {
-
-        @extend %suscripcioncuadro;
-
-    }
-
-
-}
 
 
 .about-section {
@@ -20,22 +11,34 @@ section {
     color: #660000;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    /*background-color: nth($colores, 4);*/
+   
 
 
     .infotext {
 
-        p {
+        font-family: 'Mukta Malar', sans-serif;
+        padding: 10px;
+        font-size: 20px;
 
-            font-family: 'Mukta Malar', sans-serif;
+        .mainline {
+
+            font-family: 'Durer', sans-serif;
             padding: 10px;
-            font-size: 20px;
+            font-size: 30px;
+
+
+
+           
+
+
+            @include infomainlinetablet;
 
 
 
         }
 
 
+        
 
         a {
 
@@ -44,25 +47,12 @@ section {
             font-weight: bolder;
             font-style: italic;
 
-
         }
 
 
-        .mainline {
+       
 
-            font-family: 'Durer', sans-serif;
-            padding: 10px;
-            font-size: 30px;
 
-            @media screen and (max-width: 480px) {
-
-                font-size: 16pt;
-
-            }
-
-        }
-
-        /*mobile responsive info*/
 
         @media screen and (max-width: 480px) {
 
@@ -114,26 +104,18 @@ section {
 
     }
 
+    @include infoboxyrespontablet;
 
-
-
-
-    @media screen and (max-width: 810px) {
-
-        font-size: 10pt;
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-
-    }
-
-
-
+    @include infoboxyresponsive;
 }
+
+
+
+
 
 .statement {
 
-    
+
     color: #660000;
     background-repeat: repeat;
     background-size: cover;
@@ -153,7 +135,8 @@ section {
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: rgba(255, 255, 255, 0.589);
-        border-radius: 10%;
+        border-radius: 20%;
+        padding: 10px;
     }
 
 
@@ -169,13 +152,14 @@ section {
 
             margin-bottom: 30px;
             background-color: rgba(255, 255, 255, 0.856);
-            padding: 10px;
-            border-radius: 10%;
+            padding: 25px;
+            border-radius: 25%;
             font-size: 16pt;
 
             @media screen and (max-width: 480px) {
 
                 font-size: 14pt;
+                margin-bottom: 10px;
 
 
             }
@@ -183,17 +167,12 @@ section {
 
 
 
+        @media screen and (max-width: 480px) {
 
-
-
-        @media screen and (max-width: 560px) {
-
-            padding: 5px;
+            padding: 10px;
 
 
         }
-
-
 
 
     }
@@ -209,4 +188,10 @@ section {
     }
 
 
+}
+
+
+.suscripcion {
+
+    @extend %suscripcioncuadro;
 }

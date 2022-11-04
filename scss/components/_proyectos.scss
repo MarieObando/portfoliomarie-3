@@ -7,11 +7,7 @@
 
    
 
-    .suscripcion {
-
-        @extend %suscripcioncuadro;
-
-    }
+   
 
 
     .row {
@@ -83,4 +79,10 @@
 
 
 
+}
+
+
+.suscripcion {
+
+    @extend %suscripcioncuadro;
 }

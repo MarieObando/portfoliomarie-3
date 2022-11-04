@@ -24,20 +24,17 @@
     flex-wrap: wrap;
     padding: 0 4px;
     margin-top: 100px;
-    
+
 }
 
 
 
+/*suscripcion a noticias de pagina se repite mucho y esta personalizado*/
+
 %suscripcioncuadro {
-
-
-
-
 
     .content {
 
-        
         max-width: 650px;
         width: auto;
         margin: 0 auto;
@@ -53,53 +50,46 @@
             margin-top: 50px;
 
         }
-    }
-    
 
-    h2 {
-        color: #080808;
-        margin-bottom: 40px;
 
-        @media screen and (max-width: 560px) {
+        h2 {
+            color: black;
+            margin-bottom: 40px;
 
-            font-size: 12pt;
+            @media screen and (max-width: 560px) {
+
+                font-size: 12pt;
+            }
+        }
+
+
+        .form-control {
+
+            height: 50px;
+            border-color: whitesmoke;
+            border-radius: 0;
+
+            &:focus {
+
+                box-shadow: none;
+                border: 2px solid #660000;
+
+            }
+
 
         }
-    }
 
-    .form-control {
-        height: 50px;
-        border-color: #ffffff;
-        border-radius: 0;
+        .btn {
 
-        &:focus {
+            min-height: 50px;
+            border-radius: 20;
+            background: #660000;
+            color: #fff;
+            font-weight: 600;
 
-            box-shadow: none;
-            border: 2px solid #660000;
 
         }
-    }
-
-
-    .btn {
-        min-height: 50px;
-        border-radius: 20;
-        background: #660000;
-        color: #fff;
-        font-weight: 600;
-
 
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }

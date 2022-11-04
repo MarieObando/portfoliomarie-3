@@ -15,12 +15,12 @@
     .indeximagen {
 
 
-        
+
         filter: opacity(50%);
         filter: brightness(1.35);
         width: 100%;
         height: auto;
-        
+
 
 
     }
@@ -34,12 +34,13 @@
 }
 
 
-
 .suscripcion {
 
     @extend %suscripcioncuadro;
-
 }
+
+
+
 
 
 div {
